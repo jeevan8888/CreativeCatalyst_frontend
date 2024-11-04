@@ -76,6 +76,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 80vh;
-  /* filter: grayscale(100%); */
+  background-attachment: fixed;
+  height: 90vh;
 }

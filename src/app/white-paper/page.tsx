@@ -19,7 +19,7 @@ function WhitePage() {
             </h1>
             <div className="text-center my-6">
                 <Button size="lg" className="bg-[#d9d9d9] rounded-2xl text-black font-bold text-4xl hover:bg-[#bfbfbf]">
-                    <FaFileAlt className="mr-2 h-10" size={40} aria-hidden="true" />
+                    <FaFileAlt className="mr-2" size={80} aria-hidden="true" />
                     Download
                 </Button>
             </div>

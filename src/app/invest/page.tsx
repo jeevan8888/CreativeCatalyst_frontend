@@ -1,4 +1,7 @@
 import Card from './card'
+import { EmblaOptionsType } from 'embla-carousel'
+
+const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
 
 function InvestPage() {
     return (
@@ -15,7 +18,7 @@ function InvestPage() {
                 </p>
             </div>
 
-            <Card />
+            <Card options={OPTIONS} />
 
         </section>
     )

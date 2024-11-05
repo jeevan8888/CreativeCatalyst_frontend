@@ -14,7 +14,9 @@ function Footer() {
                 <div className='flex flex-col md:flex-row justify-between items-center'>
                     <div className='flex flex-col md:flex-row gap-5 items-center'>
                         <div>
-                            <Image src="/logo.svg" alt="logo" width={100} height={100} />
+                            <Link href='/'>
+                                <Image src="/logo.svg" alt="logo" width={100} height={100} />
+                            </Link>
                         </div>
                         <div className='border border-1 py-4 border-black hidden md:block' />
                         <div>
@@ -22,16 +24,28 @@ function Footer() {
                         </div>
                     </div>
                     <div className='flex flex-wrap justify-center items-center gap-4 mt-4 md:mt-0'>
-                        <FaDiscord size={48} />
-                        <div className='h-10 w-10 bg-black text-white flex justify-center items-center rounded-md'>
-                            <FaTelegramPlane size={30} />
-                        </div>
-                        <FaVk size={48} />
-                        <IoLogoLinkedin size={48} />
-                        <FaSquareInstagram size={48} />
-                        <div className='h-10 w-10 bg-black text-white flex justify-center items-center rounded-md'>
-                            <BsTwitterX size={30} />
-                        </div>
+                        <Link href='https://discord.com/invite/c7hBh426'>
+                            <FaDiscord size={48} />
+                        </Link>
+                        <Link href='https://t.me/mycreativecatalyst'>
+                            <div className='h-10 w-10 bg-black text-white flex justify-center items-center rounded-md'>
+                                <FaTelegramPlane size={30} />
+                            </div>
+                        </Link>
+                        <Link href='https://vk.com/creative_catalyst'>
+                            <FaVk size={48} />
+                        </Link>
+                        <Link href='https://www.linkedin.com/company/creative-catalyst-crea/'>
+                            <IoLogoLinkedin size={48} />
+                        </Link>
+                        <Link href='https://www.instagram.com/crea_web3/profilecard/?igsh=ZXl5ZHZlNXBhaDQw'>
+                            <FaSquareInstagram size={48} />
+                        </Link>
+                        <Link href='https://x.com/crea_catalyst?t=njikCzOCkFeYNmVLjfBtxA&s=09'>
+                            <div className='h-10 w-10 bg-black text-white flex justify-center items-center rounded-md'>
+                                <BsTwitterX size={30} />
+                            </div>
+                        </Link>
                     </div>
                 </div>
                 <div className='border border-1 my-4 border-black' />

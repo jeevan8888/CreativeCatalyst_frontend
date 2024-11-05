@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { FaFileAlt } from 'react-icons/fa';
-import StepProgress from './stepProgress';
+import StepProgress from './StepProgress';
 
 function WhitePage() {
     const steps = [

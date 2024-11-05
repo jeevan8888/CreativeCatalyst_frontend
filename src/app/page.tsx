@@ -1,6 +1,10 @@
-import { Button } from "@/components/ui/button";
+'use client'
+import { Button } from "@/components/ui/button"
+import { useRouter } from 'next/navigation'
 
 export default function Home() {
+  const router = useRouter()
+
   return (
     <section className="homePage text-center">
       <div className="py-10 h-full flex flex-col justify-between items-center">
@@ -12,15 +16,15 @@ export default function Home() {
           </h1>
           <p className="text-white text-xl md:text-4xl font-normal">Experience art like never before</p>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-5 mt-5 md:mt-0 mb-24">
-          <Button className="rounded-full text-pink-700 font-bold text-2xl md:text-4xl p-4 md:p-8 bg-black/30 border-4 hover:bg-pink-700 hover:text-white hover:border-pink-700">
+        <div className="flex flex-wrap justify-center items-center gap-20 mt-5 md:mt-0 mb-24 w-full">
+          <Button className="rounded-full text-pink-700 font-bold text-2xl p-4 py-8 md:p-8 bg-black/30 border-4 hover:bg-pink-700 hover:text-white hover:border-pink-700 max-w-60 w-full leading-[120px] tracking-[4px]" onClick={() => router.push('/white-paper')}>
             WHITEPAPER
           </Button>
-          <Button className="rounded-full text-pink-700 font-bold text-2xl md:text-4xl p-4 md:p-8 bg-black/30 border-4 hover:bg-pink-700 hover:text-white hover:border-pink-700">
+          <Button className="rounded-full text-pink-700 font-bold text-2xl p-4 py-8 md:p-8 bg-black/30 border-4 hover:bg-pink-700 hover:text-white hover:border-pink-700 max-w-60 w-full leading-[120px] tracking-[4px]" onClick={() => router.push('invest')}>
             INVEST
           </Button>
         </div>
       </div>
-    </section>
+    </section >
   );
 }

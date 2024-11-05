@@ -55,9 +55,9 @@ const CardDetailPage = ({ params: paramsPromise }: { params: Promise<{ id: strin
                         }
                     </Accordion>
                 </div>
-                <Button onClick={() => router.push('/invest')} className="mt-6 bg-pink-700 hover:bg-pink-800 text-white rounded-full px-6 py-3">
+                {/* <Button onClick={() => router.push('/invest')} className="mt-6 bg-pink-700 hover:bg-pink-800 text-white rounded-full px-6 py-3">
                     Go Back
-                </Button>
+                </Button> */}
             </div>
         </section >
     )
